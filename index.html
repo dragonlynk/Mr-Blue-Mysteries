@@ -445,24 +445,31 @@
                         </button>
                     </div>
                     
+                    <!-- Rimosso l'height fisso per permettere al banner di adattarsi -->
                     <div class="hero-banner" style="
                         background-image: url('${immagineSpecifica}');
-                        height: 520px;
+                        height: auto;
+                        min-height: 520px;
                         cursor: default;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        padding: 25px;
+                        box-sizing: border-box;
                     ">
+                        <!-- Box dei dettagli posizionato in modo fluido con flexbox -->
                         <div style="
-                            position: absolute;
-                            bottom: 25px;
-                            left: 25px;
-                            right: 25px;
-                            background: rgba(11, 11, 13, 0.9);
+                            position: relative;
+                            background: rgba(11, 11, 13, 0.92);
                             padding: 30px;
                             border-radius: 12px;
                             border: 1px solid rgba(255,255,255,0.2);
                             backdrop-filter: blur(8px);
                             z-index: 3;
+                            width: 100%;
+                            box-sizing: border-box;
                         ">
-                            <h1 style="color: var(--accent-color); font-size: 28px; margin-top: 0; margin-bottom: 12px; text-shadow: var(--accent-glow);">${e.titolo}</h1>
+                            <h2 style="color: var(--accent-color); font-size: 26px; margin-top: 0; margin-bottom: 10px; text-shadow: var(--accent-glow);">${e.titolo}</h2>
                             
                             <div style="font-size: 15px; color: #ddd; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.15);">
                                 <strong>Data:</strong> ${e.data} &nbsp;&nbsp;|&nbsp;&nbsp; <strong>Orario:</strong> ${e.orario} &nbsp;&nbsp;|&nbsp;&nbsp; <strong>Luogo:</strong> ${e.luogo}

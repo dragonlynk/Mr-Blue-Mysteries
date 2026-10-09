@@ -10,10 +10,10 @@ const listaEventiJS = [
     link: "https://tally.so/r/gDRBe1"
   },
   {
-    titolo: "f",
-    data: "f",
-    orario: "f",
-    luogo: "f",
+    titolo: "?",
+    data: "?",
+    orario: "?",
+    luogo: "?",
     descrizione: "",
     passato: false,
     immagine: "locandina2.jpg",
